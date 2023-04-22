@@ -3,26 +3,64 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Fork Me! FCC: Test Suite Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SURVEY FORM </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title"> SURVEY FORM </h1>
 
-  <!--
+  <p id="description">
+  Hello World, We are software developers.
+  My Name is Taiwo and I am here with my partner in this project Soban.
+  
+  We are working on a survey project.
+  </p>
 
-    Hello Camper!
+  <Form id="survey-form">
+   <p>
+    <label for="name" id="name-label"> Name </label>
+    <input type="text" id="name" placeholder="John Doe" required ></p>
+    <p><label for="email" id="email-label"> Email </label>
+    <input type="email" id="email" placeholder="example@gmail.com" required> </p>
+   <p><label for="number" id="number-label"> Number </label>
+    <input type="number" id="number" placeholder="012345678" min="5" max="15"> </p>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+   <p> 
+     <select id="dropdown">
+      <option value="4"> AGE </option>
+      <option value="10"> DATE OF BIRTH </option>  
+      <!-- GENDER
+        HEIGHT
+      </option> -->
+    </select>
+    </p>
+<div>
+  <ul>
+  <li>Github <input type="radio" value="1" name="git">
+  <li>Replit <input type="radio" value="2" name="git">
+  <li>Opera <input type="radio" value="3" name="ope">
+  <li>Chrome <input type="radio" value="4" name="ope">
+  </ul>
+</div>
 
-    - The freeCodeCamp Team
+<div><p>
+  Shopping: <input type="checkbox" name="shoping" value="1">
+  Grocery: <input type="checkbox" name="grocery" value="2">
+</div>
 
-    -->
-  <p>Hello World, We are software developers!</p>
+<div>
+  <textarea name="message" id="meg" cols="30" rows="10"> #survey-form</textarea>
+</div>
+
+<button id="submit">
+Finish Survey
+</button>
+
+  </Form>
   <script src="js/index.js"></script>
 </body>
 
